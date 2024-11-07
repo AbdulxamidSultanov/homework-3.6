@@ -1,0 +1,376 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Exo 2", sans-serif;
+}
+
+p,
+a {
+  font-family: "PT sans", sans-serif;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.hero {
+  margin-bottom: 67px;
+}
+
+.hero > .container {
+  padding-top: 109px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-left {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
+
+.hero-left > h1 {
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 60px;
+  color: #363738;
+}
+
+.hero-left > p {
+  max-width: 525px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #6b6b6c;
+}
+
+.more {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #363738;
+  border-bottom: 3px solid #ffce50;
+  text-decoration: none;
+}
+
+.section-one > .section-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 4px 20px 0px #00000026;
+  border-radius: 20px;
+  padding: 40px 122px 40px 80px;
+  margin-bottom: 67px;
+}
+
+.section-one > .section-container > .card {
+  min-width: 228px;
+}
+
+.card > .icon {
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  background-color: #e9e9ec;
+  margin-bottom: 24px;
+}
+
+.card > .card-description > h4 {
+  font-weight: 600;
+  font-size: 20px;
+  color: #363738;
+  line-height: 27px;
+  margin-bottom: 16px;
+}
+
+.card > .card-description > p {
+  font-weight: 400;
+  color: #6b6b6c;
+}
+
+.card-1 {
+  padding-right: 105px;
+  margin-right: 64px;
+  border-right: 1px solid #d7d7dd;
+}
+
+.card-2 {
+  border-right: 1px solid #d7d7dd;
+  padding-right: 121px;
+  margin-right: 64px;
+}
+
+.section-two > .section-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 72.5px;
+}
+
+.section-two > .container > .right {
+  display: flex;
+  position: absolute;
+  max-height: 453.5px;
+  left: 0px;
+  bottom: 4px;
+
+  background-color: #0b7572;
+  clip-path: polygon(0 0, 57% 0, 97% 100%, 0% 100%);
+  padding: 178px 317px 166.5px 90px;
+}
+
+.section-two > .container > .right > h2 {
+  max-width: 362px;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 60px;
+  color: #fff;
+}
+
+.section-two > .bottom {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  column-gap: 140px;
+  row-gap: 62px;
+  margin: 0 auto;
+  max-width: 1242px;
+}
+
+.section-two > .bottom > .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.section-two > .bottom > .card > .card-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  background-color: #e9e9ec;
+}
+
+.section-two > .bottom > .card > .card-description > h4 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.section-two > .bottom > .card > .card-description > p {
+  font-weight: 400;
+  color: #6b6b6c;
+  max-width: 291px;
+}
+
+.mobile {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 769px;
+  }
+
+  .hero > .container {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .hero-left {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-left > h1 {
+    font-size: 44px;
+    font-weight: 55px;
+  }
+
+  .hero-left > p {
+    text-align: center;
+    max-width: 690px;
+  }
+
+  .hero-left > a {
+    margin-bottom: 73px;
+  }
+
+  .hero {
+    margin-bottom: 41px;
+  }
+
+  .section-one > .section-container {
+    flex-direction: column;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  .section-container > .card {
+    border: none;
+    flex-direction: row;
+    display: flex;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 15px 0px #0000001f;
+    min-width: 690px !important;
+    margin: 0 auto;
+  }
+
+  .section-container > .card-1 {
+    margin-bottom: 16px;
+    border-radius: 20px;
+  }
+
+  .section-container > .card-2 {
+    margin-bottom: 16px;
+    border-radius: 20px;
+  }
+
+  .section-container > .card > .icon {
+    margin: 32px 32px 40px 32px;
+  }
+
+  .section-two > .container > .right {
+    padding: 112px 227px 106px 85px;
+    clip-path: polygon(0 0, 57% 0, 97% 100%, 0% 100%);
+    left: 19px;
+  }
+
+  .section-two > .container > .right > h2 {
+    font-size: 44px;
+    line-height: 55px;
+    max-width: 288px;
+  }
+
+  .section-two > .container > .left > img {
+    width: 729px;
+    height: 383px;
+  }
+
+  .mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    max-width: 375px;
+  }
+
+  .hero > .container {
+    padding: 75px 15px 56px 15px;
+  }
+
+  .hero-left {
+    align-items: flex-start;
+    gap: 32px;
+  }
+
+  .hero-left > h1 {
+    font-size: 28px;
+    line-height: 35px;
+  }
+
+  .hero-left > p {
+    text-align: start;
+    font-size: 15px;
+    line-height: 22.5px;
+    color: #363738;
+    max-width: 347px;
+  }
+
+  .desktop-tablet {
+    display: none;
+  }
+
+  .mobile {
+    display: inline;
+  }
+
+  .hero-left > a {
+    font-size: 15px;
+    line-height: 22.5px;
+    color: #000;
+  }
+
+  .section-one > .container {
+    box-shadow: 0px 4px 20px 0px #00000026;
+    border-radius: 20px;
+  }
+
+  .section-one > .section-container > .card {
+    box-shadow: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 27px 0 32px;
+  }
+
+  .section-container > .card > .card-description > h4 {
+    font-size: 18px;
+    line-height: 24.3px;
+    max-width: 218px;
+    margin-bottom: 12px;
+  }
+
+  .section-container > .card > .card-description > p {
+    font-size: 15px;
+    line-height: 22.5px;
+    max-width: 287px;
+    margin-bottom: 24px;
+  }
+
+  .section-container > .card > .icon {
+    margin: 24px 0 16px 0;
+  }
+
+  .section-two > .container > .right {
+    clip-path: none;
+    padding: 0;
+    max-height: none;
+    background-color: transparent;
+    position: static;
+  }
+  .section-two > .container > .right > h2 {
+    color: #000;
+    font-size: 28px;
+    line-height: 35px;
+  }
+
+  .section-two > .container > .left > picture {
+    display: none;
+  }
+  .bottom > .card > .card-description > h4{
+    font-size: 18px;
+    line-height: 24.3px;
+  }
+  .bottom > .card > .card-description > p {
+    font-size: 15px;
+    line-height: 22.5px;
+  }
+}
